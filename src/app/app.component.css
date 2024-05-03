@@ -1,0 +1,230 @@
+
+
+.main_super_class {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000vh;
+    /* background-color: black; */
+    /* z-index: -100; */
+    
+    
+
+
+}
+.background_video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    
+    overflow: hidden;
+    /* z-index: -1; */
+    
+
+   
+   
+}
+
+video {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; 
+    z-index: -1;
+
+    
+  
+}
+
+.main{
+
+    
+    
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+.content {
+
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.contact-us-btn {
+    display: flex;
+    align-items: center;
+    font-size: large;
+
+    margin-top: 5em;
+    
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color (use white for contrast with black background) */
+    border: 1px solid linear-gradient(to right, violet, blue); /* Optional: Add a thin white border */
+    padding: 1em;
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+    cursor: pointer; /* Display pointer cursor on hover */
+    text-decoration: none; 
+    border: 1px solid;
+  /* Linear gradient border from violet to blue (left to right) */
+  border-image: linear-gradient(to right, violet, blue);
+  border-image-slice: 1;/* Remove underline from link */
+  }
+  
+  .contact-us-btn:hover {
+    /* background: linear-gradient(90deg, #F26105, #A800F7 0, #1965FD 45.6%, #00C7F0);
+    color: #fdfdfd; /* Optional: Change text color on hover */
+    /* border: 1px solid linear-gradient(to right, violet, blue); */ 
+    background: linear-gradient(90deg, #F26105, #A800F7 , #1965FD , #00C7F0);
+    color: #fdfdfd; /* Optional: Change text color on hover */
+    /* border: 1px solid linear-gradient(to right, violet, blue); */
+    /* border-image: linear-gradient(to right, violet, blue); */
+  }
+
+  .records {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2em;
+    
+  }
+
+  .main_heading {
+
+    display: flex;
+    font-size: 4em;
+    margin: 0;
+    padding: 0.1em;
+    font-weight: bolder;
+  }
+
+  .bottom_heading {
+    margin: 0;
+    display: flex;
+    font-size: xx-large;
+    font-weight: 500;
+  }
+
+  .like_contact {
+
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bolder;
+
+   /* padding: 4em; */
+    
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color (use white for contrast with black background) */
+    border: 1px solid  linear-gradient(to right, violet, blue); /* Optional: Add a thin white border */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+    cursor: pointer; /* Display pointer cursor on hover */
+    text-decoration: none; 
+    border: 1px solid;
+    border-radius: 50px;
+  /* Linear gradient border from violet to blue (left to right) */
+  /* border-image: linear-gradient(to right, violet, blue);
+  border-image-slice: 1; */
+
+  }
+
+
+  .like_contact:hover {
+    background: linear-gradient(90deg, #F26105, #A800F7 , #1965FD , #00C7F0);
+    color: #fdfdfd; /* Optional: Change text color on hover */
+    border: 1px solid linear-gradient(to right, violet, blue);
+    border-image: linear-gradient(to right, violet, blue);
+    border-radius:50px;
+  }
+
+
+  .content_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .normal_text {
+
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 0;
+
+
+  }
+
+
+  .style_text {
+    display: flex;
+    font-size: 4em;
+    font-weight: bolder;
+    margin: 0;
+   
+
+    background-image: linear-gradient(90deg, #F26105, #A800F7 , #1965FD , #00C7F0);
+    
+    /* Clip the background image to the text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    
+  } 
+
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    z-index: 10;
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    padding: 10px; /* Add padding */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    z-index: 1000;
+  }
+
+  header:not(.scrolled) {
+    background-color: transparent; /* Initial background color */
+    color: white; /* Initial text color */
+}
+
+/* Header style when scrolled */
+header.scrolled {
+    background-color: black; /* Background color when scrolled */
+    color: white; /* Text color */
+}
+
+
+  /* .below_stuff {
+    
+    height:20em;
+    width: 100%;
+  } */

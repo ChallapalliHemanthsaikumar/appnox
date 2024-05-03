@@ -1,0 +1,83 @@
+
+.header-menu li:hover app-dropdown {
+    display: block; /* Show the dropdown on hover */
+}
+
+  
+  .header-nav {
+
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    max-height: 4em;
+    padding-right: 1em;
+    padding-left: 1em;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid #fff;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ .header-options {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    padding-right: 1em;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.header-menu {
+    
+    display:flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.header-menu {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display menu items in a row */
+    gap: 20px; /* Add space between items */
+  }
+  
+  .header-menu li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Customize text color */
+     /* Add padding to links */
+  }
+  
+  .header-menu li a:hover {
+    color: #007bff; /* Change text color on hover */
+  }
+
+  .contact-us-btn {
+    display: flex;
+    align-items: center;
+    
+    background-color: transparent; /* Transparent background */
+    color: #fff; /* Text color (use white for contrast with black background) */
+    border: 1px solid linear-gradient(to right, violet, blue); /* Optional: Add a thin white border */
+    padding: 0.8em;
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+    cursor: pointer; /* Display pointer cursor on hover */
+    text-decoration: none; 
+    border: 1px solid;
+  /* Linear gradient border from violet to blue (left to right) */
+  border-image: linear-gradient(to right, violet, blue);
+  border-image-slice: 1;/* Remove underline from link */
+  }
+  
+  .contact-us-btn:hover {
+    background: linear-gradient(90deg, #F26105, #A800F7 0, #1965FD 45.6%, #00C7F0);
+    color: #fdfdfd; /* Optional: Change text color on hover */
+    border: 1px solid linear-gradient(to right, violet, blue);
+  }

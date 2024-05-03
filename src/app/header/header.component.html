@@ -1,0 +1,42 @@
+<nav class="header-nav">
+    <div class="header-logo">
+      <!-- Display a logo or text for your application -->
+      <h1>Appnox</h1>
+    </div>
+    <div class="header-options">
+      <ul class="header-menu">
+        <li>
+          <div href="#" (mouseenter)="showDropdown('services')" (mouseleave)="hideDropdown('services')">SERVICES</div>
+          <app-dropdown [status]="services" [options]="servicesOptions" *ngIf="showServicesDropdown" (mouseleave)="hideDropDown1()"></app-dropdown>
+      </li>
+      <li>
+          <div href="#" (mouseenter)="showDropdown('industries')" (mouseleave)="hideDropdown('industries')">INDUSTRIES</div>
+          <app-dropdown [status]="industries" [options]="industriesOptions" *ngIf="showIndustriesDropdown" (mouseleave)="hideDropDown1()"></app-dropdown>
+      </li>
+      <li>
+          <div href="#" (mouseenter)="showDropdown('solutions')" (mouseleave)="hideDropdown('solutions')">SOLUTIONS</div>
+          <app-dropdown [status]="solutions" [options]="solutionsOptions" *ngIf="showSolutionsDropdown" (mouseleave)="hideDropDown1()" ></app-dropdown>
+      </li>
+      <li>
+        <div href="#" (mouseenter)="showDropdown('developer')" (mouseleave)="hideDropdown('developer')">DEVELOPERS</div>
+        <app-dropdown [status]="developers" [options]="developerOptions" *ngIf="showDeveloperDropdown" (mouseleave)="hideDropDown1()" ></app-dropdown>
+    </li>
+    <li>
+      <div href="#" (mouseenter)="showDropdown('work')" (mouseleave)="hideDropdown('work')">WORK</div>
+      <app-dropdown [status]="work" [options]="workOptions" *ngIf="showWorkDropdown" (mouseleave)="hideDropDown1()" ></app-dropdown>
+  </li>
+  <li>
+    <div href="#" (mouseenter)="showDropdown('company')" (mouseleave)="hideDropdown('company')">COMPANY</div>
+    <app-dropdown [status]="company" [options]="companyOptions" *ngIf="showCompanyDropdown" (mouseleave)="hideDropDown1()" ></app-dropdown>
+</li>
+        <!-- <li><a href="/services">SERVICES</a></li>
+        <li><a href="/industries">INDUSTRIES</a></li>
+        <li><a href="/solutions">SOLUTIONS</a></li>
+        <li><a href="/developers">DEVELOPERS</a></li>
+        <li><a href="/work">WORK</a></li>
+        <li><a href="/company">COMPANY</a></li> -->
+        <li class="contact-us-btn" href="/contact-us">CONTACT US</li>
+      </ul>
+    </div>
+    
+  </nav>
