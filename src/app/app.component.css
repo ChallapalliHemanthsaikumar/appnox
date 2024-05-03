@@ -246,11 +246,12 @@ header.scrolled {
   border-bottom: 0.1rem solid rgb(53, 53, 53,50%);
 }
 
-  /* .below_stuff {
+  .below_stuff {
     
     height:20em;
     width: 100%;
-  } */
+    color: white;
+  }
 
   .icons {
 
