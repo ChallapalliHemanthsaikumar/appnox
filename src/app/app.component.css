@@ -7,6 +7,8 @@
     left: 0;
     width: 100%;
     height: 1000vh;
+    margin: 0;
+    padding: 0;
     /* background-color: black; */
     /* z-index: -100; */
     
@@ -52,6 +54,8 @@ video {
     
     width: 100%;
     height: 100vh;
+   
+    
 
 }
 
@@ -63,6 +67,7 @@ video {
     /* align-items: center; */
     width: 100%;
     height: 100%;
+    
     flex-direction: column;
     align-items: center;
 
@@ -194,37 +199,60 @@ video {
     
     
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     
   } 
 
-  .header {
+  header {
     position: fixed;
     width: 100%;
-    height: 10em;
+    height: 4em;
     z-index: 10;
     top: 0; /* Position it at the top */
     left: 0; /* Align it to the left */
     width: 100%; /* Full width */
-    padding: 10px; /* Add padding */
+     /* Add padding */
     transition: background-color 0.3s; /* Smooth transition for background color change */
     z-index: 1000;
   }
-
+/* 
   header:not(.scrolled) {
     background-color: transparent; /* Initial background color */
-    color: white; /* Initial text color */
-}
+    /* color: white; Initial text color */
+    /* padding: 0;
+    margin: 0;
+} */
 
 /* Header style when scrolled */
-header.scrolled {
+/* header.scrolled {
     background-color: black; /* Background color when scrolled */
-    color: white; /* Text color */
+    /* color: white; /* Text color */
+    /* padding: 0;
+    margin: 0;
+} */ 
+
+header {
+  /* Default header styles */
+  /* background-color: white; */
+  /* padding: 16px; */
+  transition: all 0.3s ease; /* Optional: smooth transition */
 }
 
+header.scrolled {
+  /* Styles when the header is scrolled */
+  /* background-color: #333; /* Darker background color, for example */
+  /* padding: 8px; Reduced padding */ 
+  background-color: rgb(53, 53, 53,50%) ;
+  border-bottom: 0.1rem solid rgb(53, 53, 53,50%);
+}
 
   /* .below_stuff {
     
     height:20em;
     width: 100%;
   } */
+
+  .icons {
+
+    padding-left: 1em;
+  }

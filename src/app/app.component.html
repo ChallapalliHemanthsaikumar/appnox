@@ -182,10 +182,10 @@
 </video>
 
 <div class="main" >
-  <div class="header scrolled">
+  <header [class.scrolled]="isScrolled">
     <app-header></app-header>
 
-  </div>
+  </header>
   
    
   <div class="content">
@@ -231,7 +231,7 @@
 
     <div >
 
-      <button class="like_contact"> WATCH OUR VIDEO</button>
+      <button class="like_contact"> WATCH OUR VIDEO   <fa-icon [icon]="faPlay" class="icons"></fa-icon> </button>
     </div>
     
 
